@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/icons8-météo-48.png" />
+    <title>Météo</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container_search">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" class="search" placeholder="Enter your location..">
+                <button class="fa-solid fa-magnifying-glass button_search"></button>
+            </div>
+            <div class="container_infos">
+                <h1 class="city"></h1>
+                <h3 class="description"></h3>
+                <div class="temperature">
+                    <img src="" alt="image de la temperature" class="img_temp" width="150px">
+                    <span class="degres"></span>
+                </div>
+                <div class="infos">
+                    <date class="date"></date>
+                    <time class="hours"></time>
+                </div>
+                <div class="container_infos_weather">
+                    <div class="weather humidity"><i class="fa-solid fa-water"></i>
+                        <div>
+                            <span class="humidity_text"></span>
+                            <p>Humidité</p>
+                        </div>
+                    </div>
+                    <div class="weather speed"><i class="fa-solid fa-wind"></i>
+                        <div>
+                            <span class="speed_text"></span>
+                            <p>Vitesse du vent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://kit.fontawesome.com/33abf9a4e1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
