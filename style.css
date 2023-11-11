@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ body {
     rgba(5, 238, 241, 1) 0%,
     rgba(239, 239, 239, 1) 69%
   );
+  font-family: "Poppins", sans-serif;
 }
 .container {
   display: flex;
