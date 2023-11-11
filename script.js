@@ -1,4 +1,4 @@
-import { API_KEYS } from "./api_keys";
+import { API_KEYS } from "./api_keys.js";
 
 const API_KEY = API_KEYS;
 let city = "Marseille";
