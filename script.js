@@ -1,5 +1,3 @@
-import { API_KEYS } from "./api_keys.js";
-
 const API_KEY = API_KEYS;
 let city = "Marseille";
 
@@ -32,7 +30,7 @@ async function getApi() {
     case "Clouds":
       img.src = "./img/cloud.png";
       break;
-    case "Haze":
+    case "Mist":
       img.src = "./img/mist.png";
       break;
     case "Rain":
