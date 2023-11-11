@@ -1,4 +1,6 @@
-const API_KEY = "45d4e6581a142d8f01ce6cc12138c644";
+import { API_KEYS } from "./api_keys";
+
+const API_KEY = API_KEYS;
 let city = "Marseille";
 
 async function getApi() {
