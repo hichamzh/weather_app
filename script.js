@@ -39,7 +39,7 @@ async function getApi() {
       case "Rain":
         img.src = "./img/rain.png";
         break;
-      case "Snows":
+      case "Snow":
         img.src = "./img/snow.png";
         break;
       default:
