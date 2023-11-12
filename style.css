@@ -149,3 +149,26 @@ h2 {
     font-size: 12px;
   }
 }
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  animation: soleil infinite linear 10s;
+  opacity: 0;
+}
+.img.active {
+  opacity: 1;
+}
+
+@keyframes soleil {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

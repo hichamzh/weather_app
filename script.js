@@ -20,29 +20,38 @@ async function getApi() {
   let speed = (document.querySelector(".speed_text").innerHTML =
     Math.floor(data.wind.speed) + " Km/h");
   ////////////////////////////////////////////////////////////
-  let img = document.querySelector(".img_temp");
+  let imgList = document.querySelectorAll(".img_temp");
 
-  switch (data.weather[0].main) {
-    case "Drizzle":
-      img.src = "./img/bruine.png";
-      break;
-    case "Clear":
-      img.src = "./img/clear.png";
-      break;
-    case "Clouds":
-      img.src = "./img/cloud.png";
-      break;
-    case "Mist":
-      img.src = "./img/mist.png";
-      break;
-    case "Rain":
-      img.src = "./img/rain.png";
-      break;
-    case "Snows":
-      img.src = "./img/snow.png";
-    default:
-      img.src = "";
-  }
+  imgList.forEach((img) => {
+    switch (data.weather[0].main) {
+      case "Drizzle":
+        img.src = "./img/bruine.png";
+        break;
+      case "Clear":
+        img.src = "./img/clear.png";
+        break;
+      case "Clouds":
+        img.src = "./img/cloud.png";
+        break;
+      case "Mist":
+        img.src = "./img/mist.png";
+        break;
+      case "Rain":
+        img.src = "./img/rain.png";
+        break;
+      case "Snows":
+        img.src = "./img/snow.png";
+        break;
+      default:
+        img.src = "";
+        break;
+    }
+    if (data.weather[0].main === "Clear") {
+      img.classList.add("active");
+    } else {
+      img.classList.remove("active");
+    }
+  });
 
   console.log(data);
 }
