@@ -23,9 +23,11 @@ async function getApi() {
   let img = document.querySelector(".img_temp");
 
   switch (data.weather[0].main) {
+    case "Drizzle":
+      img.src = "./img/bruine.png";
+      break;
     case "Clear":
       img.src = "./img/clear.png";
-      console.log(img);
       break;
     case "Clouds":
       img.src = "./img/cloud.png";
